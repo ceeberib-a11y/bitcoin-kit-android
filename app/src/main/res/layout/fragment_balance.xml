@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -126,30 +127,61 @@
         app:layout_constraintTop_toTopOf="@+id/lastBlockDateTitle"
         tools:text="2019-01-01 12:12:12" />
 
+    <TextView
+        android:id="@+id/lastBlockHashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Block Hash:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastBlockDateValue" />
+
+    <TextView
+        android:id="@+id/lastBlockHashValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textIsSelectable="true"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastBlockHashTitle"
+        tools:text="000000000000000000016e4ccd2029d0e8eb47be436b09bd7e856ea53cae867a" />
+
+    <Button
+        android:id="@+id/buttonCopyHash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Copy Hash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastBlockHashValue" />
+
     <Button
         android:id="@+id/buttonStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockDateTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCopyHash" />
 
     <Button
         android:id="@+id/buttonDebug"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="28dp"
         android:text="Debug info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockDateTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonCopyHash" />
 
     <Button
         android:id="@+id/buttonClear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Clear"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
@@ -158,9 +190,10 @@
         android:id="@+id/buttonStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:text="Status"
         app:layout_constraintEnd_toEndOf="@+id/buttonDebug"
         app:layout_constraintTop_toBottomOf="@+id/buttonDebug" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+        
