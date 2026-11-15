@@ -1,7 +1,6 @@
 
-
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -24,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/networkTitle"
+        app:layout_constraintStart_toEndOf="@id/networkTitle"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Testnet" />
 
@@ -36,7 +35,7 @@
         android:text="Balance:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/networkTitle" />
+        app:layout_constraintTop_toBottomOf="@id/networkTitle" />
 
     <TextView
         android:id="@+id/balanceValue"
@@ -44,8 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/balanceTitle"
-        app:layout_constraintTop_toTopOf="@+id/balanceTitle"
+        app:layout_constraintStart_toEndOf="@id/balanceTitle"
+        app:layout_constraintTop_toTopOf="@id/balanceTitle"
         tools:text="100.0" />
 
     <TextView
@@ -56,7 +55,7 @@
         android:text="Balance Unspendable:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balanceTitle" />
+        app:layout_constraintTop_toBottomOf="@id/balanceTitle" />
 
     <TextView
         android:id="@+id/balanceUnspendableValue"
@@ -64,8 +63,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/balanceUnspendableTitle"
-        app:layout_constraintTop_toTopOf="@+id/balanceUnspendableTitle"
+        app:layout_constraintStart_toEndOf="@id/balanceUnspendableTitle"
+        app:layout_constraintTop_toTopOf="@id/balanceUnspendableTitle"
         tools:text="100.0" />
 
     <TextView
@@ -76,7 +75,7 @@
         android:text="State:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/balanceUnspendableTitle" />
+        app:layout_constraintTop_toBottomOf="@id/balanceUnspendableTitle" />
 
     <TextView
         android:id="@+id/stateValue"
@@ -84,8 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/stateTitle"
-        app:layout_constraintTop_toTopOf="@+id/stateTitle"
+        app:layout_constraintStart_toEndOf="@id/stateTitle"
+        app:layout_constraintTop_toTopOf="@id/stateTitle"
         tools:text="syncing" />
 
     <TextView
@@ -96,7 +95,7 @@
         android:text="Last Block:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/stateTitle" />
+        app:layout_constraintTop_toBottomOf="@id/stateTitle" />
 
     <TextView
         android:id="@+id/lastBlockValue"
@@ -104,8 +103,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/lastBlockTitle"
-        app:layout_constraintTop_toTopOf="@+id/lastBlockTitle"
+        app:layout_constraintStart_toEndOf="@id/lastBlockTitle"
+        app:layout_constraintTop_toTopOf="@id/lastBlockTitle"
         tools:text="123000" />
 
     <TextView
@@ -116,7 +115,7 @@
         android:text="Until:"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockTitle" />
+        app:layout_constraintTop_toBottomOf="@id/lastBlockTitle" />
 
     <TextView
         android:id="@+id/lastBlockDateValue"
@@ -124,8 +123,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintStart_toEndOf="@+id/lastBlockDateTitle"
-        app:layout_constraintTop_toTopOf="@+id/lastBlockDateTitle"
+        app:layout_constraintStart_toEndOf="@id/lastBlockDateTitle"
+        app:layout_constraintTop_toTopOf="@id/lastBlockDateTitle"
         tools:text="2019-01-01 12:12:12" />
 
     <TextView
@@ -136,7 +135,7 @@
         android:text="Block Hash:"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockDateValue" />
+        app:layout_constraintTop_toBottomOf="@id/lastBlockDateValue" />
 
     <TextView
         android:id="@+id/lastBlockHashValue"
@@ -147,7 +146,7 @@
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockHashTitle"
+        app:layout_constraintTop_toBottomOf="@id/lastBlockHashTitle"
         tools:text="000000000000000000016e4ccd2029d0e8eb47be436b09bd7e856ea53cae867a" />
 
     <Button
@@ -157,7 +156,7 @@
         android:layout_marginTop="4dp"
         android:text="Copy Hash"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastBlockHashValue" />
+        app:layout_constraintTop_toBottomOf="@id/lastBlockHashValue" />
 
     <Button
         android:id="@+id/buttonStart"
@@ -166,7 +165,7 @@
         android:layout_marginTop="16dp"
         android:text="Start"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCopyHash" />
+        app:layout_constraintTop_toBottomOf="@id/buttonCopyHash" />
 
     <Button
         android:id="@+id/buttonDebug"
@@ -176,7 +175,7 @@
         android:layout_marginEnd="28dp"
         android:text="Debug info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonCopyHash" />
+        app:layout_constraintTop_toBottomOf="@id/buttonCopyHash" />
 
     <Button
         android:id="@+id/buttonClear"
@@ -185,7 +184,7 @@
         android:layout_marginTop="16dp"
         android:text="Clear"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonStart" />
+        app:layout_constraintTop_toBottomOf="@id/buttonStart" />
 
     <Button
         android:id="@+id/buttonStatus"
@@ -193,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Status"
-        app:layout_constraintEnd_toEndOf="@+id/buttonDebug"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDebug" />
+        app:layout_constraintEnd_toEndOf="@id/buttonDebug"
+        app:layout_constraintTop_toBottomOf="@id/buttonDebug" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
